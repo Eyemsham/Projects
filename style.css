@@ -118,12 +118,14 @@ nav {
 }
 
 /* ========== Contact Page ========== */
+.contact-us{
+    height: 100vh;
+}
 .contact-page {
     display: flex;
     flex-wrap: wrap;
     max-width: 870px;
     margin: 100px auto;
-    margin-top: 120px;
     border: 1px solid #e0e4ea;
     transition: box-shadow 0.3s;
     overflow: hidden;
@@ -487,7 +489,7 @@ p span {
                 url('Pictures/maseko/Contact-img.jpg') center/cover no-repeat;
     background-blend-mode: overlay;
     padding: 100px 40px 40px;
-    margin-top: 120px;
+
   }
 
   .left-panel {
