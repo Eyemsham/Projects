@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Days+One&family=GFS+Didot&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sigmar&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'GFS Didot';
+    /* font-family: "Poppins", sans-serif; */
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    position: relative;
+    background-color: #fff;
+    color: #000;
+}
+
+/* ========== Navbar ========== */
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background-color: #f5f5f5;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(0);
+}
+
+
+.logo img {
+    height: 40px;
+}
+
+.navlist {
+    display: flex;
+    align-items: center;
+}
+
+.navlist a {
+    color: #3f3f3f;
+    margin-left: 60px;
+    font-size: 17px;
+    font-weight: 200;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+.navlist a:hover {
+    border-bottom: 2px solid #333;
+    border-radius: 2px;
+    color: #999;
+}
+.navlist a.active {
+    border-bottom: 2px solid #333;
+}
+
+.search-bar {
+    flex: 1;
+    margin: 0 40px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    width: 60%;
+    padding: 8px 0;
+    font-size: 17px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    background: transparent;
+    color: #333;
+}
+
+.search-bar input:focus {
+    border-bottom: 1px solid #949292;
+}
+
+.hamburger {
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    color: #333;
+    margin-left: auto;
+}
+
+/* ========== Hero Section (Optional) ========== */
+.hero {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.slideshow {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    animation: slideShow 80s infinite;
+}
+.slide {
+    flex: 1 0 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-top: 2.5rem;
+}
+@keyframes slideShow {
+    0%, 25% { transform: translateX(0%); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    80% { transform: translateX(-300%); }
+    100% { transform: translateX(0%); }
+}
+
+/* ========== Contact Page ========== */
+.contact-page {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 870px;
+    margin: 100px auto;
+    margin-top: 120px;
+    border: 1px solid #e0e4ea;
+    transition: box-shadow 0.3s;
+    overflow: hidden;
+    background-color: #fdfdfd;
+}
+
+/* Left Panel (image or background) */
+.left-panel {
+    flex: 1;
+    padding: 5px;
+}
+
+/* Right Panel (form container) */
+.right-panel {
+    flex: 1;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Input Fields */
+input,
+textarea {
+    border: 1px solid #ddd;
+    padding: 14px 16px;
+    font-size: 15px;
+    background-color: #f9f9f9;
+    transition: all 0.2s ease;
+    color: #333;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #333;
+    background-color: #fff;
+    outline: none;
+}
+
+/* Placeholder Styling */
+input::placeholder,
+textarea::placeholder {
+    color: #aaa;
+}
+
+/* Button */
+button {
+    padding: 14px;
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #222;
+}
+
+/* Info & Social Icons */
+.info {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    gap: 8%;
+    justify-content: space-between;
+}
+
+.info p {
+    flex: 1;
+    min-width: 150px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.info a{
+    color: rgb(77, 77, 255);
+}
+.info a:hover{
+    color: green;
+    transition: 0.3s;
+}
+
+.contact-page h2 {
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    /* font-family: 'Libre Baskerville', serif;  */
+    color: #3f3f3f;
+    background-color: #f3f3f3;
+    padding: 15px 20px;
+    text-align: center;
+    margin-bottom: 25px;
+    border-left: 6px solid #000000; /* Tailor-style golden thread */
+    border-right: 6px solid #000000;
+}
+
+/* services */
+.services-section {
+  max-width: 960px;
+  margin: 100px auto;
+  padding: 0 20px;
+  color: #1a1a1a;
+  background-color: #ffffff;
+}
+.services-section .intro {
+  background-color: #f6f6f6;
+  padding: 20px 25px;
+  border-left: 3px solid #1a1a1a;
+  border-right: 3px solid #1a1a1a;
+  border-radius: 4px;
+  font-size: 1.05rem;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+}
+
+.service-card {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  padding: 30px 25px;
+  margin-bottom: 30px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.service-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
+.service-card h2 {
+  font-size: 1.4rem;
+  color: #000000;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #333333;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 600px) {
+
+  .service-card h2 {
+    font-size: 1rem;
+  }
+
+  .service-card p {
+    font-size: 0.8rem;
+  }
+.services-section .intro {
+    font-size: 1rem;
+    padding: 15px 18px;
+    margin-bottom: 40px;
+    border-left: 2px solid #1a1a1a;
+    border-right: 2px solid #1a1a1a;
+  }
+}
+
+
+
+/* ========== Footer ========== */
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 12px;
+    text-shadow: 0 2px 8px rgba(255,255,255,0.04);
+        font-family: "Poppins", sans-serif;
+}
+
+/* ========== Icons (Shared) ========== */
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.icons i {
+    color: #fff;
+    font-size: 27px;
+}
+.icons i:hover {
+    color: #464646;
+    transition: 0.3s;
+}
+
+/* ========== Explore Button (optional) ========== */
+a.btn {
+    display: inline-block;
+    padding: 0.8%;
+    width: 150px;
+    font-size: 16px;
+    position: fixed;
+    bottom: 25%;
+    left: 8%;
+    text-align: center;
+    background-color: #000;
+    color: #c2c2c2;
+    font-weight: 300;
+    border: none;
+}
+a.btn:hover {
+    background-color: #464646;
+    color: #dfdfdf;
+}
+
+/* ========== About Section ========== */
+.about {
+    padding: 2rem;
+}
+.about img {
+    width: 100%;
+    height: auto;
+}
+.about-content {
+    max-width: 1026px;
+    margin: 60px auto 40px;
+    padding: 40px 30px;
+    border: 1px solid #e0e4ea;
+    transition: box-shadow 0.3s;
+}
+.about p, h2{
+        /* font-family: "Poppins", sans-serif; */
+}
+.about h2 {
+    font-size: 1.2rem;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+}
+
+.about p {
+    margin-bottom: 35px;
+    line-height: 2rem;
+}
+p span {
+    font-style: italic;
+}
+
+/* ========== Scroll to Top Button ========== */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+#myBtn:hover {
+    background-color: #555;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 1024px) {
+    nav {
+        flex-wrap: wrap;
+        padding: 10px 15px;
+    }
+
+    .hamburger {
+        display: block;
+        order: 2;
+    }
+     .hamburger:hover{
+        color: #c2c2c2;
+     }
+
+    .logo {
+        order: 1;
+    }
+
+    .logo img {
+        height: 2rem;
+    }
+
+    .search-bar {
+        order: 2;
+        width: 60%;
+      
+    }
+
+    .search-bar input {
+        font-size: small;
+    }
+
+    .navlist {
+        order: 3;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        padding: 0;
+        gap: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+    }
+
+    .navlist.show {
+        padding: 10px 0;
+        gap: 20px;
+        max-height: 300px;
+    }
+
+    .navlist a {
+        margin: 10px 20px;
+        font-size: 16px;
+    }
+
+    a.btn {
+        width: 25%;
+        transform: none;
+        position: absolute;
+    }
+
+    .about h2 {
+        font-size: 1rem;
+    }
+
+    .about .p1, .p2, .p3, .p4 {
+        font-size: small;
+    }
+
+    footer p {
+        font-size: 0.5rem;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Medium screens (tablets/small laptops) */
+@media (max-width: 992px) {
+  .contact-page {
+    flex-direction: column;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0,0,0,0.6)),
+                url('Pictures/maseko/Contact-img.jpg') center/cover no-repeat;
+    background-blend-mode: overlay;
+    padding: 100px 40px 40px;
+    margin-top: 120px;
+  }
+
+  .left-panel {
+    display: none;
+  }
+
+  .right-panel {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    padding: 40px 30px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+
+      .logo img {
+        height: 1.2rem;
+    }
+  .contact-page {
+    padding: 80px 20px 20px;
+    margin-top: 80px;
+  }
+
+  .right-panel {
+    padding: 30px 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+  }
+
+  .info {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contact-page h2 {
+    font-size: 15px;
+  }
+
+  input,
+  textarea {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}

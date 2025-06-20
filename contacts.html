@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Maseko Studio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">
+      <img src="Pictures/Logo.png" alt="Maseko Logo" />
+    </div>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Search..." />
+    </div>
+
+    <ul class="navlist" id="navlist">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="#" class="active">Contact</a></li>
+    </ul>
+
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </nav>
+
+  <!-- Contact Section -->
+  <main class="contact-page">
+    <div class="left-panel">
+   <img src="Pictures/maseko/Contact-img.jpg" alt="Contact Image" style="max-width: 100%; height: 100%;">
+
+    </div>
+    <div class="right-panel">
+      <h2>Get in touch</h2>
+<form id="contact-form">
+  <input type="text" name="name" placeholder="Full Name" required />
+  <input type="email" name="email" placeholder="E-mail" required />
+  <textarea name="message" placeholder="Message" required></textarea>
+  <button type="submit">SUBMIT</button>
+</form>
+
+
+
+<div class="info">
+  <p><strong>CONTACT</strong><br>
+    Email: masekocpt@gmail.com<br>
+    Phone: +27 60 698 5899
+  </p>
+
+  <p><strong>BASED IN</strong><br>
+ 143 Sir Lowry Road, Cape Town, 8001, Western Cape
+  </p>
+
+  <p><strong>SOCIALS</strong><br>
+    <a href="https://wa.me/27606985899" target="_blank" rel="noopener">WhatsApp</a>
+  </p>
+</div>
+
+  </main>
+
+  <!-- ==================== Footer ==================== -->
+  <footer>
+    <div class="icons">
+      <a href="#"><i class="ri-facebook-circle-line"></i></a>
+      <a href="https://www.instagram.com/maseko_tailor/"><i class="ri-instagram-line"></i></a>
+      <a href="https://x.com/Maseko_Maseko61"><i class="ri-twitter-x-line"></i></a>
+      <a href="https://www.youtube.com/@masekostudio03"><i class="ri-youtube-line"></i></a>
+    </div>
+    <p>&copy; 2025 MASEKO. All rights reserved.</p>
+  </footer>
+
+
+  <script src="script.js"></script>
+  <!-- Email SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+  (function () {
+    emailjs.init("d8iU0g-qU-Y00H_at"); 
+  })();
+
+  document.getElementById("contact-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_uci991n", "template_wt7vxfb", this)
+      .then(function () {
+        alert("Message sent successfully!");
+        document.getElementById("contact-form").reset();
+      }, function (error) {
+        alert("Failed to send message. Please try again.");
+        console.log(error);
+      });
+  });
+  </script>
+</body>
+</html>
