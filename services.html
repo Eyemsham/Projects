@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>SERVICES</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="services.css"/>
+</head>
+<body>
+
+<nav>
+  <div class="logo">
+    <a href="index.html"><img src="Pictures/Logo.png" alt="MASEKO"/></a>
+  </div>
+  <div class="search-bar">
+    <input type="text" placeholder="Search…"/>
+  </div>
+  <ul class="navlist" id="navlist">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="#" class="active">Services</a></li>
+    <li><a href="contacts.html">Contacts</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger">&#9776;</div>
+</nav>
+
+<!-- HERO -->
+<section class="services-hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-text">
+    <h1><b>Our Services </b></h1>
+    <div class="hero-divider"></div>
+    <p>Crafted with intention. Tailored to you.</p>
+
+  </div>
+</section>
+<!-- INTRO -->
+<div class="intro-wrap">
+  <p>At MASEKO Cape Town, we offer tailored fashion solutions designed to meet your individual needs with style, precision, and excellence.</p>
+</div>
+
+<!-- SERVICES GRID -->
+<section class="services-section">
+
+  <div class="service-card">
+    <img class="card-img" src="Pictures/services/IMG_4852 (1).jpg" alt="Custom Garment Design"/>
+    <div class="card-body">
+      <span class="card-tag">01 - Bespoke</span>
+      <span class="card-accent"></span>
+      <h2>Custom Garment Design</h2>
+      <p>We bring your vision to life through fully bespoke pieces for special occasions, graduations, formal events, or everyday statement wear. Each garment is made-to-measure and uniquely designed to suit your body, style, and story.</p>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <img class="card-img" src="Pictures/services/IMG_4962.jpg" alt="Tailoring and Alterations"/>
+    <div class="card-body">
+      <span class="card-tag">02 - Expert Fit</span>
+      <span class="card-accent"></span>
+      <h2>Tailoring &amp; Alterations</h2>
+      <p>As your trusted "Clothes Doctor," we offer expert alteration services to give your garments the perfect fit and renewed life. From resizing to zip replacements, we handle every detail with care and precision.</p>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <img class="card-img" src="Pictures/services/IMG_5030.jpg" alt="Repairs and Restorations"/>
+    <div class="card-body">
+      <span class="card-tag">03 - Restoration</span>
+      <span class="card-accent"></span>
+      <h2>Repairs &amp; Restorations</h2>
+      <p>We revive worn or damaged garments through professional repairs that extend their lifespan without compromising quality or appearance ideal for sentimental pieces or premium fabrics.</p>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <img class="card-img" src="Pictures/services/IMG_5007.jpg" alt="Ready-to-Wear Pieces"/>
+    <div class="card-body">
+      <span class="card-tag">04 - Collection</span>
+      <span class="card-accent"></span>
+      <h2>Ready-to-Wear Pieces</h2>
+      <p>Explore our limited collections of ready-made designs that reflect the bold and modern identity of MASEKO Cape Town. All pieces are rooted in African craftsmanship and urban elegance.</p>
+    </div>
+  </div>
+
+
+  <div class="service-card">
+    <img class="card-img" src="Pictures/services/IMG_4924.jpg" alt="Fabric Consultation"/>
+    <div class="card-body">
+      <span class="card-tag">06 - Expertise</span>
+      <span class="card-accent"></span>
+      <h2>Fabric Consultation</h2>
+      <p>Get expert guidance on fabric selection, quality, and care. We help you choose the perfect materials for your project, ensuring durability, comfort, and aesthetic appeal tailored to your vision.</p>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <img class="card-img" src="Pictures/services/IMG_5072.jpg" alt="Style Consultation"/>
+    <div class="card-body">
+      <span class="card-tag">07 - Personal Style</span>
+      <span class="card-accent"></span>
+      <h2>Style Consultation</h2>
+      <p>Discover your unique style with our personalized consultation services. We work with you to identify what works best for your body type, lifestyle, and preferences to create a signature look.</p>
+    </div>
+  </div>
+
+  <div class="service-card wide">
+    <img class="card-img" src="Pictures/services/IMG_4934 (3).jpg" alt="Pattern Making and Cutting"/>
+    <div class="card-body">
+      <span class="card-tag">05 - Technical</span>
+      <span class="card-accent"></span>
+      <h2>Pattern Making &amp; Cutting</h2>
+      <p>We provide technical fashion services for fellow designers or students who need help with pattern drafting, sample cutting, or garment construction. Available by request a resource for those who understand the craft.</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- VIEW GALLERY BUTTON -->
+<div class="gallery-cta-wrap">
+  <button class="gallery-cta-btn" onclick="toggleGallery(this)">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="1" width="6" height="6" stroke="currentColor" stroke-width="1.2"/>
+      <rect x="9" y="1" width="6" height="6" stroke="currentColor" stroke-width="1.2"/>
+      <rect x="1" y="9" width="6" height="6" stroke="currentColor" stroke-width="1.2"/>
+      <rect x="9" y="9" width="6" height="6" stroke="currentColor" stroke-width="1.2"/>
+    </svg>
+    View Gallery
+  </button>
+</div>
+
+<!-- GALLERY SECTION -->
+<section class="gallery-section" id="gallerySection">
+  <div class="gallery-header">
+        <div class="gallery-divider-b"></div>
+    <h2>The Work</h2>
+    <div class="gallery-divider"></div>
+    <p>A curated selection of bespoke pieces and tailored craftsmanship</p>
+  </div>
+
+  <div class="gallery-filters">
+    <button class="filter-btn active" onclick="filterGallery('all', this)">All</button>
+    <button class="filter-btn" onclick="filterGallery('bespoke', this)">Bespoke</button>
+    <button class="filter-btn" onclick="filterGallery('tailoring', this)">Tailoring</button>
+    <button class="filter-btn" onclick="filterGallery('collection', this)">Collection</button>
+    <button class="filter-btn" onclick="filterGallery('fabric', this)">Fabric</button>
+  </div>
+
+  <div class="gallery-grid" id="galleryGrid">
+    <div class="gallery-item tall" data-cat="bespoke" data-idx="0" onclick="openLightbox(0)">
+      <img src="Pictures/maseko/Contact-img1.jpg" alt="Bespoke piece"/>
+      <div class="gallery-item-overlay">
+        <span class="overlay-tag">Bespoke</span>
+        <span class="overlay-title">Custom Evening Wear</span>
+      </div>
+    </div>
+    <div class="gallery-item" data-cat="tailoring" data-idx="1" onclick="openLightbox(1)">
+      <img src="Pictures/services/IMG_4962.jpg" alt="Tailoring"/>
+      <div class="gallery-item-overlay">
+        <span class="overlay-tag">Tailoring</span>
+        <span class="overlay-title">Expert Alterations</span>
+      </div>
+    </div>
+    <div class="gallery-item" data-cat="collection" data-idx="2" onclick="openLightbox(2)">
+      <img src="Pictures/services/IMG_5007.jpg" alt="Collection"/>
+      <div class="gallery-item-overlay">
+        <span class="overlay-tag">Collection</span>
+        <span class="overlay-title">Ready-to-Wear</span>
+      </div>
+    </div>
+    <div class="gallery-item wide" data-cat="bespoke" data-idx="3" onclick="openLightbox(3)">
+      <img src="Pictures/maseko/IMG_7572 copy.jpg" alt="Pattern Making"/>
+      <div class="gallery-item-overlay">
+        <span class="overlay-tag">Technical</span>
+        <span class="overlay-title">Pattern &amp; Cut</span>
+      </div>
+    </div>
+    <div class="gallery-item" data-cat="tailoring" data-idx="4" onclick="openLightbox(4)">
+      <img src="Pictures/services/IMG_5030.jpg" alt="Restoration"/>
+      <div class="gallery-item-overlay">
+        <span class="overlay-tag">Restoration</span>
+        <span class="overlay-title">Garment Repair</span>
+      </div>
+    </div>
+    <div class="gallery-item" data-cat="fabric" data-idx="5" onclick="openLightbox(5)">
+      <img src="Pictures/services/IMG_4924.jpg" alt="Fabric"/>
+      <div class="gallery-item-overlay">
+        <span class="overlay-tag">Fabric</span>
+        <span class="overlay-title">Material Selection</span>
+      </div>
+    </div>
+    
+    <div class="gallery-item" data-cat="collection" data-idx="6" onclick="openLightbox(6)">
+      <img src="Pictures/services/IMG_4901.jpg" alt="Style"/>
+      <div class="gallery-item-overlay">
+        <span class="overlay-tag">Style</span>
+        <span class="overlay-title">Personal Style</span>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightboxOutside(event)">
+  <div class="lightbox-inner">
+    <button class="lightbox-close" onclick="closeLightbox()">&#215;</button>
+    <button class="lightbox-nav lightbox-prev" onclick="shiftLightbox(-1)">&#8592;</button>
+    <button class="lightbox-nav lightbox-next" onclick="shiftLightbox(1)">&#8594;</button>
+    <img id="lightboxImg" src="" alt=""/>
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="icons">
+    <a href="#"><i class="ri-facebook-circle-line"></i></a>
+    <a href="https://www.instagram.com/maseko_tailor/"><i class="ri-instagram-line"></i></a>
+    <a href="https://x.com/Maseko_Maseko61"><i class="ri-twitter-x-line"></i></a>
+    <a href="https://www.youtube.com/@masekostudio03"><i class="ri-youtube-line"></i></a>
+  </div>
+  <p>&copy; 2025 MASEKO. All rights reserved.</p>
+</footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
