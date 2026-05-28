@@ -606,3 +606,189 @@ p span {
     }
 }
 
+
+
+/* ===== Responsiveness + performance fixes (no design/content changes) ===== */
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    gap: 20px;
+}
+
+.search-bar input {
+    min-width: 160px;
+}
+
+.contact-us {
+    min-height: 100vh;
+    height: auto;
+    padding: 1px 16px;
+}
+
+.left-panel img {
+    width: 100%;
+    height: 100% !important;
+    min-height: 418px;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 1024px) {
+    nav {
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo {
+        flex: 0 0 auto;
+    }
+
+    .hamburger {
+        order: 3;
+    }
+
+    .search-bar {
+        order: 2;
+        flex: 1;
+        width: auto;
+        margin: 0 10px;
+        justify-content: flex-end;
+    }
+
+    .search-bar input {
+        width: 100%;
+        max-width: 260px;
+    }
+
+    .navlist {
+        order: 4;
+        flex-basis: 100%;
+    }
+
+    .navlist.show {
+        max-height: 360px;
+    }
+
+    .navlist li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navlist a {
+        display: block;
+        margin: 0;
+        padding: 12px 20px;
+    }
+
+    .hero {
+        height: 85vh;
+    }
+
+    .slide {
+        margin-top: 0;
+        background-position: center top;
+    }
+
+    a.btn {
+        width: auto;
+        min-width: 130px;
+        padding: 12px 24px;
+        left: 24px;
+        bottom: 90px;
+        position: absolute;
+    }
+
+    .about {
+        padding: 1rem;
+    }
+
+    .about-content {
+        margin-top: 80px;
+        padding: 28px 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 12px 16px;
+    }
+
+    .logo img {
+        height: 28px;
+    }
+
+    .search-bar {
+        display: none;
+    }
+
+    .hero {
+        height: 78vh;
+    }
+
+    a.btn {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 80px;
+    }
+
+    .contact-us {
+        padding: 1px 12px;
+    }
+
+    .contact-page {
+        width: 100%;
+        margin: 78px auto 32px;
+        padding: 0;
+    }
+
+    .right-panel {
+        width: 100%;
+    }
+
+    form {
+        gap: 14px;
+    }
+
+    textarea {
+        min-height: 130px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 10px 14px;
+    }
+
+    .navlist.show {
+        gap: 0;
+    }
+
+    .hero {
+        height: 72vh;
+    }
+
+    .about-content {
+        padding: 22px 16px;
+    }
+
+    .about p {
+        line-height: 1.75rem;
+        font-size: 0.95rem;
+    }
+
+    .contact-page h2 {
+        padding: 14px;
+    }
+
+    footer {
+        padding: 18px 12px;
+    }
+}
